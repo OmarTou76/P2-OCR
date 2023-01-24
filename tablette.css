@@ -1,0 +1,42 @@
+/* Tablette  */
+@media screen and (max-width: 992px) {  
+    body{
+        padding: 0 70px;
+    }
+    .container_popular_hebergement{
+        flex-direction: column;
+        height: 940px;
+        max-height: 960px;
+    }
+    .hebergement{
+        height: 66.5%;
+        margin: 0 0 2.5em;
+    }
+    .hebergement_container{
+    }
+    .hebergement_card{
+        flex: 0 31.2%;
+    }
+    .most_popular{
+        max-height: 275px;
+        justify-content: space-around;
+    }
+    .most_popular_container{
+        flex-direction: row;
+        width: 100%;
+        height: 80%;
+        flex: 0;
+    }
+    .most_popular_card{
+        height:100%;
+        flex: 0 31%;
+    }
+
+    .activity_card img {
+        height: 80%;
+    }
+    .activity_card p {
+        padding: 0.5em ;
+    }
+
+}

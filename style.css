@@ -24,6 +24,10 @@ ul{
     padding-left: 0;
     list-style: none;
 }
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
 /* Differentes typographie utile */
 .text_title{
     font-weight: 700;
@@ -117,7 +121,7 @@ body {
     border: 1px solid var(--gray);
     padding: 5px 7px;
 }
-.search_form button {
+.search_button {
     border: none;
     border-radius: 0 15px 15px 0;
     color: #FFFFFF;
@@ -125,7 +129,12 @@ body {
     padding: 0px 20px;
     cursor: pointer;
 }
-
+.search_button::after{
+    content: "Rechercher";
+}
+.search_button i {
+    display: none;
+}
 .filter_list{
     gap: 2%;
     display: flex;
@@ -176,36 +185,33 @@ body {
 /* Container qui englobe Les plus populaires et hebergement */
 .container_popular_hebergement{
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    max-height: 626px;
+    max-height: 39.125em;
 }
 /*  Section les plus populaires */
 .most_popular{
     /* REGLER LE GAP ENTRE LES DEUX COMPOSANT EN FONCTION DE HEBERGEMENT */
-    flex: 0 33.3%;
+    flex: 0 32.5%;
     background: var(--gray);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 2.5% 3.5%;
-    gap: 6%;
 }
 .most_popular_title{
-    /* flex: 0 1 10%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 0 10%;
 }
 .most_popular_container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    gap: 5%;
 }
 .most_popular_card{
-    flex: 1 1; /* === S'adapte a la card la plus rempli */
+    flex: 0 29%; 
     height: 0; /* Obligation de mettre 0 pour que ca s'adapte */
     width: 100%;
     display: flex;
@@ -234,7 +240,7 @@ body {
     flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--gray);
     border-radius: 20px;
     padding: 2% 3%;
@@ -252,7 +258,7 @@ body {
 
 .hebergement_card{
     flex: 0 31.2%;
-    height: 43.5%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
@@ -279,23 +285,26 @@ body {
 /* Activities */
 .activities{
     width: 100%;
-    height: 70vh;
-    max-height: 480px;
+    max-height: 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.activities h2{
+    height: 2em;
 }
 .activity {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    height: 92.5%;
     width: 100%;
+    height: 27.5em;
+    flex: 0;
 }
 .activity_card{
     flex: 0 22.5%;
     display: flex;
-    height: 100%;
+    min-height: 100%;
     flex-direction: column;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 20px;
@@ -311,14 +320,14 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 7%;
+    padding: 0 10%;
 }
 
 /* Footer */
 footer{
     display: flex;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     max-height: 225px;
     background-color: var(--gray);
     padding: 3% 1%;

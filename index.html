@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablette.css">
     <script src="https://kit.fontawesome.com/78c9506a4e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <img src="/images//logo/Booki.png" width="62" height="19" alt="Logo Booki">
         <ul class="header_nav">
-            <li class="header_nav_isActiv">Hébergements</li>
-            <li>Activités</li>
+            <a href="#hebergement_id">
+            <li class="header_nav_isActiv">
+                    Hébergements
+                </li>
+            </a>
+            <a href="#activities_id">
+            <li>
+                    Activités
+                </li>
+            </a>
         </ul>
     </header>
     <section class="section_title">
@@ -27,7 +36,7 @@
             </div>
             <input type="text" class="text_list_title" placeholder="Marseille, France">
             <button type="submit"
-                class="text_list_title"><!-- <i class="fa-solid fa-magnifying-glass"></i> --><span>Rechercher</span></button>
+                class="text_list_title search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <div class="filter_list">
             <p class="text_list_title">Filtres</p>
@@ -43,7 +52,7 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
-    <main class="container_popular_hebergement space">
+    <main class="container_popular_hebergement space" id="hebergement_id">
         <section class="hebergement">
             <h2 class="text_title">Hébergements à Marseille</h2>
             <div class="hebergement_container">
@@ -65,7 +74,6 @@
                         </div>
                 </a>
                 <a href="#" class="hebergement_card">
-
                     <img class="hebergement_card_img"
                         src="/images//hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre d'hotel">
 
@@ -201,7 +209,6 @@
                     </div>
                 </a>
                 <a href="#" class="most_popular_card">
-
                     <img class="most_popular_card_img"
                         src="/images/hebergements//4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="Chambre d'hotel">
@@ -223,8 +230,8 @@
             </div>
         </section>
     </main>
-    <section class="activities space">
-        <h2>Activités à Marseille</h2>
+    <section class="activities space" id="activities_id">
+        <h2 class="text_title">Activités à Marseille</h2>
         <div class="activity">
             <a href="#" class="activity_card">
                 <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">

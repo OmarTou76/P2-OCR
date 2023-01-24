@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {  
+    /* Remplace 'Recherche' par la loupe */
+    .search_button::after{
+        content: ""
+    }
+    .search_button i {
+        display: inline-block;
+    }
+}
