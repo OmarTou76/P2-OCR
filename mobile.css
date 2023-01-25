@@ -1,9 +1,114 @@
-@media screen and (max-width: 768px) {  
-    /* Remplace 'Recherche' par la loupe */
+@media screen and (max-width: 767px) {  
+    body{
+        padding: 0;
+    }
+    body > *:not(.header, .container_popular_hebergement, footer) {
+        padding: 0 20px;
+    }
+
+    /* Header */
+    .header{
+        flex-direction: column;
+    }
+    .header img{
+        margin: 20px 0;
+    }
+    .header_nav{
+        width: 100%;
+    }
+    .header_nav a {
+        width: 100%;
+    }
+    .header_nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .header_nav_isActiv{
+        border-top: none;
+        border-bottom: 2px solid var(--blue);
+    }
+
+    /* Recherche */
+    .search_form{
+        justify-content: center;
+    }
     .search_button::after{
         content: ""
     }
     .search_button i {
         display: inline-block;
+    }
+    .filter_list{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .filter_list ul{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .filter_information{
+        margin-bottom: 15px;
+    }
+
+    .container_popular_hebergement{
+        flex-direction: column-reverse;
+        height: 2000px;
+        max-height: 2000px;
+    }
+    .most_popular{
+        max-height: 28%;
+        border-radius: 0px;
+        padding: 2.5% 5.5%;
+    }
+    .most_popular_title{
+        flex: 0 8%;
+    }
+    .most_popular_container{
+        flex-direction: column;
+        flex-basis: 83%;
+        height: 80%;
+    }
+    .most_popular_card{
+        flex: 0 32%;
+        height: 0;
+    }
+    .hebergement{
+        padding: 2.5% 5.5%;
+        margin: 0;
+        background-color: white;
+    }
+    .hebergement_container{
+        height: 96%;
+    }
+    .hebergement_card{
+        height: calc(100% / 6.8);
+        flex: 0 100%;
+    }
+    .hebergement > p {
+        display: none;
+    }
+    .activities{
+        height: 926px;
+        max-height: 950px;
+    }
+    .activity{
+        flex-direction: column;
+        height: 96%;
+        max-height: 96%;
+    }
+    .activity_card{
+        min-height: auto;
+    }
+    .activity_card p {
+        padding: 0 1.5em;
+    }
+
+    footer{
+        flex-direction: column;
+        max-height: 600px;
+    }
+    .footer_section{
+        padding: 4%;
     }
 }

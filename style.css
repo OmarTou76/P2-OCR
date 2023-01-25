@@ -9,11 +9,14 @@
 }
 .blue_star{
     color: var(--blue);
-    font-size: 12px;
+    height: 12px;
+    width: 12px;
+    margin-right: 2px;
 }
 .trans_star{
     color: var(--gray);
-    font-size: 12px;
+    height: 12px;
+    width: 12px;
 }
 *, *::before, *::after{
     box-sizing: border-box;
@@ -61,22 +64,21 @@ body {
     font-weight: 400;
     line-height: 19px;
     font-size: 16px;
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 3em;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-}
 /* Header du site */
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-
+}
+.header img {
+    width: 61px;
+    height: 19px;
 }
 .header_nav{
     display: flex;
@@ -87,7 +89,6 @@ body {
 }
 .header_nav li{
     padding: 30px 20px 20px;
-    cursor: pointer;
     box-sizing: border-box;
 }
 .header img {
@@ -114,7 +115,7 @@ body {
 }
 .search_form div{
     border-radius: 15px 0 0 15px;
-    padding: 15px;
+    padding: 15px 20px;
     background: #F2F2F2;
 }
 .search_form input{
@@ -126,7 +127,7 @@ body {
     border-radius: 0 15px 15px 0;
     color: #FFFFFF;
     background-color: var(--blue);
-    padding: 0px 20px;
+    padding: 0px 30px;
     cursor: pointer;
 }
 .search_button::after{
@@ -134,12 +135,14 @@ body {
 }
 .search_button i {
     display: none;
+    height: 17px;
+    width: 17px;
 }
 .filter_list{
-    gap: 2%;
     display: flex;
     align-items: center;
     padding: 10px 0;
+    gap: 2%;
 }
 
 .filter_list ul{
@@ -148,6 +151,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     gap: 2%;
+    
 }
 .filter_list li{
     padding: 10px 20px;
@@ -168,7 +172,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1%;
-    padding-top: 15px;
+    
 }
 .filter_information i {
     color: var(--blue);
@@ -201,7 +205,7 @@ body {
 .most_popular_title{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     flex: 0 10%;
 }
 .most_popular_container{
@@ -221,6 +225,7 @@ body {
 }
 .most_popular_card_img{
     width: 40%;
+    min-width: 40%;
     border-radius: 20px 0 0 20px;
     border: 5px solid #FFFFFF;
     object-fit: cover;
@@ -269,6 +274,7 @@ body {
 .hebergement_card_img{
     width: 100%;
     height: 60%;
+    min-height: 60%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     border: 5px solid white;
@@ -313,6 +319,7 @@ body {
 .activity_card img {
     width: 100%;
     height: 88%;
+    min-height: 88%;
     object-fit: cover;
 }
 .activity_card p {
@@ -320,7 +327,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 1em;
 }
 
 /* Footer */

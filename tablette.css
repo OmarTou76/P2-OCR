@@ -1,5 +1,5 @@
 /* Tablette  */
-@media screen and (max-width: 992px) {  
+@media screen and (max-width: 991px) {  
     body{
         padding: 0 70px;
     }
@@ -12,8 +12,6 @@
         height: 66.5%;
         margin: 0 0 2.5em;
     }
-    .hebergement_container{
-    }
     .hebergement_card{
         flex: 0 31.2%;
     }
@@ -24,8 +22,7 @@
     .most_popular_container{
         flex-direction: row;
         width: 100%;
-        height: 80%;
-        flex: 0;
+        flex: 0 62%;
     }
     .most_popular_card{
         height:100%;
@@ -34,6 +31,7 @@
 
     .activity_card img {
         height: 80%;
+        min-height: 80%;
     }
     .activity_card p {
         padding: 0.5em ;
