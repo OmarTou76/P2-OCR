@@ -9,6 +9,7 @@
     /* Header */
     .header{
         flex-direction: column;
+        align-items: center;
     }
     .header img{
         margin: 20px 0;
@@ -22,18 +23,27 @@
     .header_nav li {
         width: 100%;
         text-align: center;
-    }
-    .header_nav_isActiv{
         border-top: none;
-        border-bottom: 2px solid var(--blue);
+        border-bottom: 2px solid transparent;
     }
 
     /* Recherche */
     .search_form{
-        justify-content: center;
+        /* justify-content: center; */
+        width: 100%;
+    }
+    .search_form > input{
+        width: 100%;
     }
     .search_button::after{
         content: ""
+    }
+    .search_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 50px;
+        padding: 0;
     }
     .search_button i {
         display: inline-block;
