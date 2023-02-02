@@ -29,7 +29,6 @@
 
     /* Recherche */
     .search_form{
-        /* justify-content: center; */
         width: 100%;
     }
     .search_form > input{
@@ -44,7 +43,10 @@
         justify-content: center;
         min-width: 50px;
         padding: 0;
+        border-radius: 1rem;
+        margin-left: -1rem;
     }
+
     .search_button i {
         display: inline-block;
     }
